@@ -18,7 +18,7 @@ past = False
 # get class period from user
 while past == False :
     period = input("class_period (7/8/9) : ")
-    if period >= 7 and period <= 10 :
+    if period >= 7 and period <= 9 :
         past = True;
 
 # get choice of class list
