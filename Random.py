@@ -13,11 +13,16 @@ CLASSES = {
 
 #----------------------------------------------
 
+past = False
+
 # get class period from user
-period = input("class_period: ")
+while past == False :
+    period = input("class_period (7/8/9) : ")
+    if period >= 7 and period <= 10 :
+        past = True;
 
 # get choice of class list
-choice = CLASSES.get(period))
+choice = CLASSES.get(period)
 
 # choose random number from 0 to class size
 num =  random.randint(0,len(choice))
