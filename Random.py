@@ -1,3 +1,8 @@
+# Fabiha Ahmed & Kristin Lin
+# SoftDev pd09
+# Work 02: Get Your Pyth-on
+# 09-12-17
+
 import random
 
 CLASSES = {
@@ -6,9 +11,16 @@ CLASSES = {
     9: [ 'Yu Qi', 'Michela', 'Kristin', 'Fabiha', 'Maxim', 'Marcus', 'Ish', 'James', 'Ryan', 'Edward', 'Adeeb', 'Jake', 'Cynthia', 'Kevin', 'Levi', 'Edmond', 'Kyle', 'Andrew', 'Max', 'Jenny', 'Philip', 'Shan', 'Mansour', 'Ray', 'Jake', 'Ida', 'Kerry', 'Stanley', 'Jackie', 'William', 'Tina', 'Michael']
 }
 
+#----------------------------------------------
 
+# get class period from user
 period = input("class_period: ")
-choice = CLASSES.get(period))
-num =  random.randint(0,len(CLASSES.get(period)))
-print CLASSES.get(period)[num]
 
+# get choice of class list
+choice = CLASSES.get(period))
+
+# choose random number from 0 to class size
+num =  random.randint(0,len(choice))
+
+# print that random student
+print choice[num]
